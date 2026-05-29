@@ -1,0 +1,24 @@
+-- Corrected section (obvious syntax corruption removed)
+
+for i = 0, 100 do
+    Percent.Text = "Loading... "..i.."%"
+    task.wait(0.3)
+end
+
+Percent.Text = "Macro Loaded Successfully!"
+task.wait(2)
+
+ScreenGui:Destroy()
+
+-- NOTE:
+-- The uploaded file appears to be truncated/corrupted after this point.
+-- Corrupted fragments found:
+--   Destroy()estroy()hamBold
+--   Destroy()nction update(input)
+-- These indicate that multiple script sections were accidentally concatenated.
+--
+-- The remainder of the script cannot be reliably reconstructed without the
+-- original source because large portions are missing (e.g. the beginning of
+-- function update, variable declarations, GUI objects, etc.).
+--
+-- Re-upload the original .lua/.txt script and I can repair it more completely.
